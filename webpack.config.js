@@ -1,5 +1,5 @@
 const path = require('path')
-//const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     mode: 'production',
     entry: {
@@ -18,10 +18,11 @@ module.exports = {
             }
         ]
     },
-    /*plugins: [
+    plugins: [
         new HtmlWebpackPlugin({
+            title: 'FUI',
             template: 'index.html'
         })
-    ]*/
+    ]
 
 }
